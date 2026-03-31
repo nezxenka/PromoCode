@@ -1,0 +1,32 @@
+type: MYSQL
+
+mysql:
+  host: localhost
+  port: 3306
+  database: promocode
+  user: plugins
+  password: "неприятный человек попался"
+  
+  properties:
+    useSSL: false
+    autoReconnect: true
+    characterEncoding: utf8
+    useUnicode: true
+    serverTimezone: UTC
+
+# HikariCP настройки пула соединений
+hikari:
+  maximum-pool-size: 10
+  
+  minimum-idle: 2
+  
+  max-lifetime: 1800000
+  
+  connection-timeout: 5000
+  
+  idle-timeout: 600000
+  
+  keepalive-time: 300000
+
+sqlite:
+  filename: promocodes.db

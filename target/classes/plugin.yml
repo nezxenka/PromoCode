@@ -1,0 +1,14 @@
+name: PromoCode
+version: '1.0'
+main: org.nezxenka.promocode.PromoCode
+api-version: '1.16'
+author: nezxenka
+description: Professional PromoCode plugin with MySQL support
+softdepend: [PlaceholderAPI, LinkAlert]
+
+commands:
+  promocode:
+    description: Управление промокодами
+    usage: /promocode <reload|info|stats>
+    aliases: [promo, pc]
+    permission: promocode.admin
