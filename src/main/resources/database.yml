@@ -4,8 +4,8 @@ mysql:
   host: localhost
   port: 3306
   database: promocode
-  user: plugins
-  password: "неприятный человек попался"
+  user: root
+  password: ""
   
   properties:
     useSSL: false
